@@ -1,0 +1,120 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+    background-color: #666666;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    overflow-x: hidden;
+    
+}
+
+
+#banner {
+    width: 100%;
+	height: 55px;
+	background-color: #56A0D3;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#56A0D3), to(#FFFFFF));
+	background: -webkit-linear-gradient(top, #56A0D3, #FFFFFF);
+	background: -moz-linear-gradient(top, #56A0D3, #FFFFFF);
+	background: -ms-linear-gradient(top, #56A0D3, #FFFFFF);
+	background: -o-linear-gradient(top, #56A0D3, #FFFFFF);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled='true',
+                startColorstr=#56A0D3, endColorstr=#FFFFFF);
+    border-bottom: 4px solid #000000;
+    -webkit-box-shadow: -2px -2px 3px rgba(255,255,255,.5);
+	-moz-box-shadow: -2px -2px 3px rgba(255,255,255,.5);
+	box-shadow: -2px -2px 3px rgba(255,255,255,.5);
+	color: white;
+	vertical-align: middle;
+	font-size: 24px;
+	line-height: 55px;
+}
+
+#banner span {
+    display: block;
+	width: 950px;
+	margin-right: auto;
+	margin-left: auto;
+	color: #000000;
+}
+
+a:link {
+    text-decoration: none;
+	color: #000000;
+	}
+	
+a:visited {
+	text-decoration: none;
+	color: #000000;
+	}
+	
+a:hover {
+	color: #56A0D3;
+	}
+
+#main {
+    
+    height: 100%;
+	width: 950px;
+	clear: both;
+	margin: 5px auto 0 auto;
+    background-color: #ffffff;
+    -webkit-box-shadow: -2px -2px 3px rgba(0,0,0,.5);
+    -moz-box-shadow: -2px -2px 3px rgba(0,0,0,.5);
+	box-shadow: -2px -2px 3px rgba(0,0,0,.5);
+    min-height: 1200px;
+    max-width: 950px;
+}
+
+
+h3 {
+    background-color: #56A0D3;
+    margin: 0;
+}
+
+#menu {
+    height: 100%;
+	max-width: 300px;
+    min-width: 300px;
+	float: left;
+	border-right: 2px solid #000000;
+	line-height: 24px;
+	font-size: 18px;
+    background-color: #ffffff;
+	padding: 20px 10px 10px 20px;
+    
+}
+
+
+#content {
+    width: auto;
+	float: left;
+	height: 100%;
+}
+
+#primary {
+    float: left;
+	max-width: 600px;
+    width: auto;
+	padding: 20px 10px 10px 20px;
+}
+
+#primary span {
+	color: red;
+}
+
+#todo_list {
+  height: 500px;
+  width: 550px;
+  border: thin solid black;
+  overflow: auto;
+}
+
+.overdue{
+	color: red;
+}

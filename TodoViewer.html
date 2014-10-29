@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Todo Item Viewer</title>
+		<link rel="stylesheet" type="text/css" href="TodoViewer.css">
+		<script src="http://www.cs.unc.edu/Courses/comp416-f13/jquery-1.10.2.js"></script>
+	
+		<script src="TodoViewer.js"></script>
+	</head>
+	<body> 
+		<div id="banner"> 
+			<a href="/"> 
+			<span>To Do Application</span></a> 
+		</div>
+
+		<div id="main"> 
+			<section id="menu"> 
+				<div id="control">
+					<h3>Filter</h3> 
+					<br />
+					<form>
+					Sort by: 
+					<select id="sortkey_select" name="sortkey">
+						<option value="title" selected>Title</option>
+						<option value="project">Project Name</option>
+						<option value="due_date">Due Date</option>
+						<option value="priority">Priority</option>
+					</select>
+					</form>
+				</div>
+				<br />
+				<div>Display Completed Items?<br />
+					<label><input type="checkbox" checked name=yes id=yes_box class=filter>Completed</label><br>
+					<label><input type="checkbox" checked name=no id=no_box class=filter>Not Complete</label><br>
+				</div>
+				<br />
+				<div id="add_item">
+					<h3>Add new Item</h3>
+					<br />
+						<form id="add_item_form">
+							<div>Title: (Required)<br /><input type="text" size="40" name="title" /> </div>
+							<div>Project: <br /><input type="text" size="40" name="project" /> </div>
+							<div>Due Date: <br /><input type="text" size="40" name="due_date" placeholder="YYYY-MM-DD" /></div>
+							<div>Priority: <br />
+								<select name="priority">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5" selected>5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+								</select>
+							</div>
+							<div>Notes:<br /> <textarea rows='4' cols='35' name='note'></textarea> </div>
+							<div>Completed: <br />
+								<select name="completed">
+									<option value=1>Yes</option>
+									<option value=0 selected>No</option>
+								</select>
+							</div>
+							<button type="submit" id="btnAdd">Add</button>
+							<button type="reset">Clear</button>
+						</form> 
+				</div>
+			</section> 
+			<section id="content"> 
+				<div id="primary"> 
+					<h3>To do list:</h3>
+					Click an item to expand.<br />
+					Items in <span><b>RED</b></span> are <span><b>OVERDUE.</b></span>
+					<br />
+					<div id="todo_list"></div>
+				</div>
+			</section> 
+		</div> 
+	</body> 
+</html>
